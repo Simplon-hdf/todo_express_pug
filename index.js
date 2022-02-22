@@ -20,6 +20,11 @@ app.get('/contact', (req, res) => {
 app.get('/blog', (req, res) => {
   res.render('blog', { title: 'Blog', message:'This is the blog page', message2: 'Title Article', para: 'blablablablablablablablablablablablablablablablablabla'})
 })
+
+app.get('/thanks', (req, res) => {
+  res.render('thanks', { title: 'Thanks', message: 'We thank you', para: 'je sais pas quoi noter, donc je note ce que je pense', message2: 'Footer', para2: 'Ceci est le footer et comme le para au dessus je sais pas quoi noter' })
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

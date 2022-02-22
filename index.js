@@ -14,7 +14,11 @@ app.set('view engine', 'pug');
 // })
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Hey', message: 'Hello there!' })
+  res.render('index', { title: 'Hey', message: 'Hello everyone!' })
+})
+
+app.get('/about', (req, res) => {
+  res.render('about', { title: 'Yo', message1: 'Hamid', message2: 'Danny', message3: 'Christopher'} )
 })
 
 app.listen(port, () => {
